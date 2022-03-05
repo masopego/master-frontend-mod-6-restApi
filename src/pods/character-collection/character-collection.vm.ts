@@ -1,8 +1,16 @@
+import { CharacterLocation, CharacterOrigin } from './api';
+
 export interface CharacterEntityVm {
-  id: string;
-  picture: string;
+  id: number;
+  created: string;
   name: string;
-  description: string;
-  rating: number;
-  address: string;
+  status: string;
+  species: string;
+  type: string;
+  gender: string;
+  origin: CharacterOrigin;
+  location: CharacterLocation;
+  image: string;
+  episode: string[];
+  url: string;
 }
