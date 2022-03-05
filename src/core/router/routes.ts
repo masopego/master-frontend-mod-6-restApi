@@ -11,7 +11,7 @@ export const switchRoutes: SwitchRoutes = {
   root: '/',
   characterCollection: '/characters',
   createCharacter: '/character/create',
-  editCharacter: '/character/:id',
+  editCharacter: '/characters/:id',
 };
 
 type NavigationFunction = (id: string) => string;

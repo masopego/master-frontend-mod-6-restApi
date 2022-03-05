@@ -36,9 +36,9 @@
       "countryCode": "US",
       "deepLink": "http://www.travelnow.com/templates/55505/hotels/125727/overview?lang=en&amp;currency=USD&amp;standardCheckin=null/null/null&amp;standardCheckout=null/null/null",
       "highRate": 289,
-      "hotelId": 1257278,
-      "hotelInDestination": true,
-      "hotelRating": 4,
+      "characterId": 1257278,
+      "characterInDestination": true,
+      "characterRating": 4,
       "location": {
         "latitude": 47.60985,
         "longitude": -122.33475
@@ -46,7 +46,7 @@
       "locationDescription": "Near Pike Place Market",
       "lowRate": 259,
       "metadata": {
-        "path": "/hotels/1"
+        "path": "/characters/1"
       },
       "postalCode": 98101,
       "propertyCategory": 1,
@@ -73,9 +73,9 @@
       "countryCode": "US",
       "deepLink": "http://www.travelnow.com/templates/55505/hotels/164122/overview?lang=en&amp;currency=USD&amp;standardCheckin=null/null/null&amp;standardCheckout=null/null/null",
       "highRate": 259,
-      "hotelId": 164122,
-      "hotelInDestination": true,
-      "hotelRating": 4,
+      "characterId": 164122,
+      "characterInDestination": true,
+      "characterRating": 4,
       "location": {
         "latitude": 47.61309,
         "longitude": -122.33788
@@ -83,7 +83,7 @@
       "locationDescription": "Near Pike Place Market",
       "lowRate": 209,
       "metadata": {
-        "path": "/hotels/2"
+        "path": "/characters/2"
       },
       "postalCode": 98101,
       "propertyCategory": 1,
@@ -110,9 +110,9 @@
       "countryCode": "US",
       "deepLink": "http://www.travelnow.com/templates/55505/hotels/164116/overview?lang=en&amp;currency=USD&amp;standardCheckin=null/null/null&amp;standardCheckout=null/null/null",
       "highRate": 320,
-      "hotelId": 164116,
-      "hotelInDestination": true,
-      "hotelRating": 4,
+      "characterId": 164116,
+      "characterInDestination": true,
+      "characterRating": 4,
       "location": {
         "latitude": 47.61017,
         "longitude": -122.33357
@@ -120,7 +120,7 @@
       "locationDescription": "Near Pike Place Market",
       "lowRate": 205,
       "metadata": {
-        "path": "/hotels/3"
+        "path": "/characters/3"
       },
       "postalCode": 98101,
       "propertyCategory": 1,
@@ -147,9 +147,9 @@
       "countryCode": "US",
       "deepLink": "http://www.travelnow.com/templates/55505/hotels/127092/overview?lang=en&amp;currency=USD&amp;standardCheckin=null/null/null&amp;standardCheckout=null/null/null",
       "highRate": 269,
-      "hotelId": 127092,
-      "hotelInDestination": true,
-      "hotelRating": 4,
+      "characterId": 127092,
+      "characterInDestination": true,
+      "characterRating": 4,
       "location": {
         "latitude": 47.61252,
         "longitude": -122.35013
@@ -157,7 +157,7 @@
       "locationDescription": "Near Pike Place Market",
       "lowRate": 179,
       "metadata": {
-        "path": "/hotels/4"
+        "path": "/characters/4"
       },
       "postalCode": 98121,
       "propertyCategory": 1,
@@ -184,9 +184,9 @@
       "countryCode": "US",
       "deepLink": "http://www.travelnow.com/templates/55505/hotels/113426/overview?lang=en&amp;currency=USD&amp;standardCheckin=null/null/null&amp;standardCheckout=null/null/null",
       "highRate": 188.202,
-      "hotelId": 113426,
-      "hotelInDestination": true,
-      "hotelRating": 3.5,
+      "characterId": 113426,
+      "characterInDestination": true,
+      "characterRating": 3.5,
       "location": {
         "latitude": 47.61381,
         "longitude": -122.33686
@@ -194,7 +194,7 @@
       "locationDescription": "Near Pike Place Market",
       "lowRate": 187.202,
       "metadata": {
-        "path": "/hotels/5"
+        "path": "/characters/5"
       },
       "postalCode": 98101,
       "propertyCategory": 1,
@@ -221,9 +221,9 @@
       "countryCode": "US",
       "deepLink": "http://www.travelnow.com/templates/55505/hotels/132138/overview?lang=en&amp;currency=USD&amp;standardCheckin=null/null/null&amp;standardCheckout=null/null/null",
       "highRate": 489,
-      "hotelId": 132138,
-      "hotelInDestination": true,
-      "hotelRating": 4,
+      "characterId": 132138,
+      "characterInDestination": true,
+      "characterRating": 4,
       "location": {
         "latitude": 47.60682,
         "longitude": -122.33358
@@ -231,7 +231,7 @@
       "locationDescription": "Near Pike Place Market",
       "lowRate": 189,
       "metadata": {
-        "path": "/hotels/6"
+        "path": "/characters/6"
       },
       "postalCode": 98101,
       "propertyCategory": 1,
@@ -258,9 +258,9 @@
       "countryCode": "US",
       "deepLink": "http://www.travelnow.com/templates/55505/hotels/191964/overview?lang=en&amp;currency=USD&amp;standardCheckin=null/null/null&amp;standardCheckout=null/null/null",
       "highRate": 159,
-      "hotelId": 191964,
-      "hotelInDestination": true,
-      "hotelRating": 3.5,
+      "characterId": 191964,
+      "characterInDestination": true,
+      "characterRating": 3.5,
       "location": {
         "latitude": 47.66143,
         "longitude": -122.31429
@@ -268,7 +268,7 @@
       "locationDescription": "In Seattle (University District)",
       "lowRate": 119,
       "metadata": {
-        "path": "/hotels/7"
+        "path": "/characters/7"
       },
       "postalCode": 98105,
       "propertyCategory": 1,
@@ -295,9 +295,9 @@
       "countryCode": "US",
       "deepLink": "http://www.travelnow.com/templates/55505/hotels/213497/overview?lang=en&amp;currency=USD&amp;standardCheckin=null/null/null&amp;standardCheckout=null/null/null",
       "highRate": 210,
-      "hotelId": 213497,
-      "hotelInDestination": true,
-      "hotelRating": 4,
+      "characterId": 213497,
+      "characterInDestination": true,
+      "characterRating": 4,
       "location": {
         "latitude": 47.60688,
         "longitude": -122.33361
@@ -305,7 +305,7 @@
       "locationDescription": "Near Pike Place Market",
       "lowRate": 175,
       "metadata": {
-        "path": "/hotels/8"
+        "path": "/characters/8"
       },
       "postalCode": 98101,
       "propertyCategory": 1,
@@ -332,9 +332,9 @@
       "countryCode": "US",
       "deepLink": "http://www.travelnow.com/templates/55505/hotels/119562/overview?lang=en&amp;currency=USD&amp;standardCheckin=null/null/null&amp;standardCheckout=null/null/null",
       "highRate": 239.5368,
-      "hotelId": 119562,
-      "hotelInDestination": true,
-      "hotelRating": 4,
+      "characterId": 119562,
+      "characterInDestination": true,
+      "characterRating": 4,
       "location": {
         "latitude": 47.61318,
         "longitude": -122.34009
@@ -342,7 +342,7 @@
       "locationDescription": "Near Pike Place Market",
       "lowRate": 189.4252,
       "metadata": {
-        "path": "/hotels/9"
+        "path": "/characters/9"
       },
       "postalCode": 98121,
       "propertyCategory": 1,
@@ -369,9 +369,9 @@
       "countryCode": "US",
       "deepLink": "http://www.travelnow.com/templates/55505/hotels/342070/overview?lang=en&amp;currency=USD&amp;standardCheckin=null/null/null&amp;standardCheckout=null/null/null",
       "highRate": 289,
-      "hotelId": 342070,
-      "hotelInDestination": true,
-      "hotelRating": 3,
+      "characterId": 342070,
+      "characterInDestination": true,
+      "characterRating": 3,
       "location": {
         "latitude": 47.62561,
         "longitude": -122.35129
@@ -379,14 +379,14 @@
       "locationDescription": "Near Pacific Northwest Ballet",
       "lowRate": 229,
       "metadata": {
-        "path": "/hotels/10"
+        "path": "/characters/10"
       },
       "postalCode": 98109,
       "propertyCategory": 1,
       "proximityDistance": 12.074359,
       "proximityUnit": "MI",
       "rateCurrencyCode": "USD",
-      "shortDescription": "With a stay at The Maxwell Hotel - Pineapple Hospitality, you&apos;ll be centrally located in Seattle, steps from Pacific Northwest Ballet and Teatro ZinZanni. This",
+      "shortDescription": "With a stay at The Maxwell hotel - Pineapple Hospitality, you&apos;ll be centrally located in Seattle, steps from Pacific Northwest Ballet and Teatro ZinZanni. This",
       "stateProvinceCode": "WA",
       "thumbNailUrl": "/thumbnails/3445681_43_t.jpg",
       "tripAdvisorRating": 4.5,
