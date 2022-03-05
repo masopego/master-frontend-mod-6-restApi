@@ -1,6 +1,6 @@
-import { HotelEntityApi } from './hotel-collection.api-model';
+import { CharacterEntityApi } from './character-collection.api-model';
 
-export const mockHotelCollection: HotelEntityApi[] = [
+export const mockCharacterCollection: CharacterEntityApi[] = [
   {
     id: '1',
     type: 'hotel',
@@ -16,9 +16,9 @@ export const mockHotelCollection: HotelEntityApi[] = [
     deepLink:
       'http://www.travelnow.com/templates/55505/hotels/213497/overview?lang=en&amp;currency=USD&amp;standardCheckin=null/null/null&amp;standardCheckout=null/null/null',
     highRate: 210,
-    hotelId: 213497,
-    hotelInDestination: true,
-    hotelRating: 4,
+    characterId: 213497,
+    characterInDestination: true,
+    characterRating: 4,
     location: {
       latitude: 47.60688,
       longitude: -122.33361,
@@ -56,9 +56,9 @@ export const mockHotelCollection: HotelEntityApi[] = [
     deepLink:
       'http://www.travelnow.com/templates/55505/hotels/132138/overview?lang=en&amp;currency=USD&amp;standardCheckin=null/null/null&amp;standardCheckout=null/null/null',
     highRate: 489,
-    hotelId: 132138,
-    hotelInDestination: true,
-    hotelRating: 4,
+    characterId: 132138,
+    characterInDestination: true,
+    characterRating: 4,
     location: {
       latitude: 47.60682,
       longitude: -122.33358,
