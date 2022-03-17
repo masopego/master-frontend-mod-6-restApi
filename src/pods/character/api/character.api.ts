@@ -1,7 +1,7 @@
 import Axios from 'axios';
 import { CharacterEntity } from './character.api-model';
 
-const RMDetailUrl = 'https://rickandmortyapi.com/api/character';
+const RMDetailUrl = 'http://localhost:3000/characters/';
 
 export const getCharacter = async (
   characterId: string
