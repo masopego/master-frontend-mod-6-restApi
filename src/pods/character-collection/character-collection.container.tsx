@@ -13,14 +13,13 @@ export const CharacterCollectionContainer = () => {
     loadCharacterCollection();
   }, []);
 
-  const handleCreateCharacter = () => {
-    history.push(linkRoutes.createCharacter);
-  };
+  const handleCharacterDetail = (characterId: string) =>
+    history.push(linkRoutes.characterDetail(characterId));
 
   return (
     <CharacterCollectionComponent
       characterCollection={characterCollection}
-      onCreateCharacter={handleCreateCharacter}
+      onCharacterDetail={handleCharacterDetail}
     />
   );
 };

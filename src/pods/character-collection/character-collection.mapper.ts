@@ -1,9 +1,9 @@
 import * as apiModel from './api/character-collection.api-model';
-import * as viewModel from './character-collection.vm';
+import * as viewModel from 'common/models';
 
 export const mapFromApiToVm = (
   character: apiModel.CharacterData
-): viewModel.CharacterEntityVm => ({
+): viewModel.Character => ({
   id: character.id,
   image: character.image,
   name: character.name,

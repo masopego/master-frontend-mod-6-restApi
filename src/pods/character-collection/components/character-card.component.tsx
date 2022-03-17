@@ -5,15 +5,18 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardActions from '@material-ui/core/CardActions';
 import Typography from '@material-ui/core/Typography';
-import { CharacterEntityVm } from '../character-collection.vm';
+import IconButton from '@material-ui/core/IconButton/IconButton';
+import { Character } from 'common/models';
+import DetailsIcon from '@material-ui/icons/Details';
 import * as classes from './character-card.styles';
 
 interface Props {
-  character: CharacterEntityVm;
+  character: Character;
+  onCharacterDetail: (characterId: string) => void;
 }
 
 export const CharacterCard: React.FunctionComponent<Props> = (props) => {
-  const { character } = props;
+  const { character, onCharacterDetail } = props;
 
   return (
     <Card>
@@ -33,7 +36,11 @@ export const CharacterCard: React.FunctionComponent<Props> = (props) => {
           </Typography>
         </div>
       </CardContent>
-      <CardActions>Detalle del personaje</CardActions>
+      <CardActions>
+        <IconButton onClick={() => onCharacterDetail(character.id.toString())}>
+          <DetailsIcon />
+        </IconButton>
+      </CardActions>
     </Card>
   );
 };

@@ -1,12 +1,4 @@
-export interface CharacterOrigin {
-  name: string;
-  url: string;
-}
-
-export interface CharacterLocation {
-  name: string;
-  url: string;
-}
+import { CharacterLocation, CharacterOrigin } from 'common/models';
 
 export interface CharacterInfo {
   count: number;

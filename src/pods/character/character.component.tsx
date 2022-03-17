@@ -1,50 +1,38 @@
 import React from 'react';
-import { Formik, Form } from 'formik';
-import {
-  TextFieldComponent,
-  SelectComponent,
-  RatingComponent,
-} from 'common/components';
-import { Button } from '@material-ui/core';
-import { formValidation } from './character.validations';
-import { Character } from './character.vm';
+import { Character } from 'common/models';
 import * as classes from './character.styles';
-import { Lookup } from 'common/models';
+import Card from '@material-ui/core/Card';
+import CardHeader from '@material-ui/core/CardHeader';
+import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
+import CardActions from '@material-ui/core/CardActions';
+import Typography from '@material-ui/core/Typography';
 
 interface Props {
   character: Character;
-  cities: Lookup[];
-  onSave: (character: Character) => void;
 }
 
 export const CharacterComponent: React.FunctionComponent<Props> = (props) => {
-  const { character, cities, onSave } = props;
-
+  const { character } = props;
   return (
-    <Formik
-      onSubmit={onSave}
-      initialValues={character}
-      enableReinitialize={true}
-      validate={formValidation.validateForm}
-    >
-      {() => (
-        <Form className={classes.root}>
-          <TextFieldComponent name="name" label="Name" />
-          <TextFieldComponent name="address" label="Address" />
-          <RatingComponent name="rating" max={5} />
-          <SelectComponent name="city" label="City" items={cities} />
-          <TextFieldComponent
-            name="description"
-            label="Description"
-            multiline={true}
-            rows={3}
-            rowsMax={5}
+    <Card>
+      <CardHeader title={character.name} subheader={character.species} />
+      <CardContent>
+        <div className={classes.content}>
+          <CardMedia
+            image={character.image}
+            title={character.name}
+            style={{ width: '400px', height: '400px', marginBottom: '10px' }}
           />
-          <Button type="submit" variant="contained" color="primary">
-            Save
-          </Button>
-        </Form>
-      )}
-    </Formik>
+          <Typography variant="subtitle1" gutterBottom>
+            Localización: {character.location.name} || Status:{' '}
+            {character.status}
+          </Typography>
+          <Typography variant="subtitle1" gutterBottom>
+            Episodios: {character.episode.length}
+          </Typography>
+        </div>
+      </CardContent>
+    </Card>
   );
 };

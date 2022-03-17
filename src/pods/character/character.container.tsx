@@ -1,43 +1,16 @@
 import React from 'react';
+import { useCharacter } from './character.hooks';
 import { useParams, useHistory } from 'react-router-dom';
-import * as api from './api';
-import { createEmptyCharacter, Character } from './character.vm';
-import { mapCharacterFromApiToVm, mapCharacterFromVmToApi } from './character.mappers';
-import { Lookup } from 'common/models';
 import { CharacterComponent } from './character.component';
 
-export const CharacterContainer: React.FunctionComponent = (props) => {
-  const [character, setCharacter] = React.useState<Character>(createEmptyCharacter());
-  const [cities, setCities] = React.useState<Lookup[]>([]);
-  const { id } = useParams();
-  const history = useHistory();
+export const CharacterContainer: React.FunctionComponent = () => {
+  const { characterId } = useParams();
 
-  const handleLoadCityCollection = async () => {
-    const apiCities = await api.getCities();
-    setCities(apiCities);
-  };
+  const { character } = useCharacter(characterId);
 
-  const handleLoadCharacter = async () => {
-    const apiCharacter = await api.getCharacter(id);
-    setCharacter(mapCharacterFromApiToVm(apiCharacter));
-  };
+  if (!character) {
+    return <div>Loading character</div>;
+  }
 
-  React.useEffect(() => {
-    if (id) {
-      handleLoadCharacter();
-    }
-    handleLoadCityCollection();
-  }, []);
-
-  const handleSave = async (character: Character) => {
-    const apiCharacter = mapCharacterFromVmToApi(character);
-    const success = await api.saveCharacter(apiCharacter);
-    if (success) {
-      history.goBack();
-    } else {
-      alert('Error on save character');
-    }
-  };
-
-  return <CharacterComponent character={character} cities={cities} onSave={handleSave} />;
+  return <CharacterComponent character={character} />;
 };
