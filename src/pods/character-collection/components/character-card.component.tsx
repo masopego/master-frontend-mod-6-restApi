@@ -15,8 +15,8 @@ import * as classes from './character-card.styles';
 
 interface Props {
   character: CharacterEntityVm;
-  onEdit: (id: string) => void;
-  onDelete: (id: string) => void;
+  onEdit: (id: number) => void;
+  onDelete: (id: number) => void;
 }
 
 export const CharacterCard: React.FunctionComponent<Props> = (props) => {
@@ -24,20 +24,19 @@ export const CharacterCard: React.FunctionComponent<Props> = (props) => {
 
   return (
     <Card>
-      <CardHeader
-        avatar={<Avatar aria-label="Character">{character.rating}</Avatar>}
-        title={character.name}
-        subheader={character.address}
-      />
+      <CardHeader title={character.name} subheader={character.species} />
       <CardContent>
         <div className={classes.content}>
           <CardMedia
-            image={character.picture}
+            image={character.image}
             title={character.name}
             style={{ height: 0, paddingTop: '56.25%' }}
           />
           <Typography variant="subtitle1" gutterBottom>
-            {character.description}
+            Status: {character.status}
+          </Typography>
+          <Typography variant="subtitle1" gutterBottom>
+            Episodios: {character.episode.length}
           </Typography>
         </div>
       </CardContent>

@@ -4,7 +4,7 @@
   "description": "Rest API demos",
   "main": "index.js",
   "scripts": {
-    "start": "run-p -l type-check:watch start:dev start:server",
+    "start": "run-p -l start:dev start:server",
     "start:dev": "webpack-dev-server --config ./config/webpack/dev.js",
     "start:server": "cd server && npm run mock-server",
     "build": "run-p -l type-check build:prod",
@@ -23,12 +23,14 @@
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
     "@material-ui/lab": "^4.0.0-alpha.60",
+    "@material-ui/styles": "^4.11.4",
     "axios": "^0.19.2",
     "emotion": "^10.0.27",
     "formik": "^2.1.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-hot-loader": "^4.12.21",
+    "react-router": "^6.2.2",
     "react-router-dom": "^5.2.0",
     "regenerator-runtime": "^0.13.5"
   },

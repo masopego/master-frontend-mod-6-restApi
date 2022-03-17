@@ -5,7 +5,6 @@ const RMUrl = 'https://rickandmortyapi.com/api/character';
 
 export const getCharacterCollection = async (): Promise<CharacterEntityApi> => {
   const { data } = await Axios.get(RMUrl);
-  console.log({ data });
   return data;
 };
 
