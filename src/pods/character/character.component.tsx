@@ -7,7 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton/IconButton';
-import EditIcon from '@material-ui/icons/Edit';
+import DeleteIcon from '@material-ui/icons/Delete';
 import Button from '@material-ui/core/Button';
 
 interface Props {
@@ -23,28 +23,24 @@ export const CharacterComponent: React.FunctionComponent<Props> = (props) => {
     character.bestSentences
   );
 
-  const handleEditCharacter = (sentenceIndex: number) => {
-    // const newBestSentence = bestSentences[sentenceIndex] = bestSentences;
-    // setBestSentences(newBestSentences);
+  const handleSaveBestSentences = (ev) => {
+    ev.preventDefault();
+    onSaveBestSentences(bestSentences);
   };
 
-  const handleAddNewSentences = () => {
+  const handleEditCharacter = (sentenceIndex: number) =>
+    setBestSentences((previousState) => {
+      previousState.splice(sentenceIndex, 1);
+      return previousState;
+    });
+
+  const handleAddNewSentences = (ev) => {
+    ev.preventDefault();
     if (sentence) {
-      console.log('entro por el añadir nueva frase', sentence);
       const newBestSentences = [...bestSentences, sentence];
-      console.log({ newBestSentences });
       setBestSentences(newBestSentences);
-
-      onSaveBestSentences(bestSentences);
     }
   };
-
-  React.useEffect(() => {
-    if (sentence) {
-      onSaveBestSentences(bestSentences);
-      setSentence('');
-    }
-  }, [bestSentences]);
 
   return (
     <Card>
@@ -64,7 +60,17 @@ export const CharacterComponent: React.FunctionComponent<Props> = (props) => {
             <Typography variant="subtitle1" gutterBottom>
               Episodios: {character.episode.length}
             </Typography>
-            <Typography variant="subtitle1">Mejores Frases:</Typography>
+            <div className={classes.bestSentencesContainer}>
+              <Typography variant="subtitle1">Mejores Frases:</Typography>
+              <Button
+                className={classes.button}
+                type="submit"
+                color="primary"
+                onClick={handleSaveBestSentences}
+              >
+                Save changes
+              </Button>
+            </div>
             <ul className={classes.list}>
               {character.bestSentences.map((sentence, index) => (
                 <li key={`${character.id} + ${index}`}>
@@ -75,7 +81,7 @@ export const CharacterComponent: React.FunctionComponent<Props> = (props) => {
                       type="button"
                       color="primary"
                     >
-                      <EditIcon />
+                      <DeleteIcon />
                     </IconButton>
                   </div>
                 </li>

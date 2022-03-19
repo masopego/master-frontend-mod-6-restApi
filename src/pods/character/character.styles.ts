@@ -18,6 +18,12 @@ export const info = css`
   gap: 10px;
 `;
 
+export const bestSentencesContainer = css`
+  display: flex;
+  align-tiems: center;
+  justify-content: space-between;
+`;
+
 export const list = css`
   list-style: none;
   padding: 0;
