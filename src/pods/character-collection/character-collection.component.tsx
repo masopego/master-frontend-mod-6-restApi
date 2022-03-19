@@ -1,5 +1,4 @@
 import * as React from 'react';
-import Button from '@material-ui/core/Button';
 import { Character } from 'common/models';
 import { CharacterCard } from './components/character-card.component';
 import * as classes from './character-collection.styles';

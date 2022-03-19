@@ -20,9 +20,9 @@ export interface CharacterData {
   image: string;
   episode: string[];
   url: string;
+  bestSentences: string[];
 }
 
 export interface CharacterEntityApi {
-  info: CharacterInfo;
-  results: CharacterData[];
+  data: CharacterData[];
 }

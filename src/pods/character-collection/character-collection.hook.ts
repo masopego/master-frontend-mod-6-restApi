@@ -10,9 +10,8 @@ export const useCharacterCollection = () => {
   >([]);
 
   const loadCharacterCollection = async () => {
-    const { results } = await getCharacterCollection();
-
-    setCharacterCollection(mapToCollection(results, mapFromApiToVm));
+    const data = await getCharacterCollection();
+    setCharacterCollection(mapToCollection(data, mapFromApiToVm));
   };
 
   return { characterCollection, loadCharacterCollection };
