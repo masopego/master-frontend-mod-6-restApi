@@ -12,8 +12,4 @@ export const mapFromApiToVm = (
   species: character.species,
   type: character.type,
   gender: character.gender,
-  origin: character.origin,
-  location: character.location,
-  episode: character.episode,
-  url: character.url,
 });
