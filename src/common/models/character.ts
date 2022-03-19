@@ -20,5 +20,5 @@ export interface CharacterOrigin {
 
 export interface CharacterLocation {
   name: string;
-  url: string;
+  url?: string;
 }
