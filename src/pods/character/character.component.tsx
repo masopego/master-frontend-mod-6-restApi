@@ -28,9 +28,6 @@ export const CharacterComponent: React.FunctionComponent<Props> = (props) => {
             Localización: {character.location.name} || Status:{' '}
             {character.status}
           </Typography>
-          <Typography variant="subtitle1" gutterBottom>
-            Episodios: {character.episode.length}
-          </Typography>
         </div>
       </CardContent>
     </Card>

@@ -5,7 +5,7 @@ import { useCharacterCollection } from './character-collection.hook';
 import { CharacterCollectionComponent } from './character-collection.component';
 
 export const CharacterCollectionContainer = () => {
-  const { characterCollection, loadCharacterCollection } =
+  const { characterCollection, loadCharacterCollection, handlePage, count } =
     useCharacterCollection();
   const history = useHistory();
 
@@ -20,6 +20,8 @@ export const CharacterCollectionContainer = () => {
     <CharacterCollectionComponent
       characterCollection={characterCollection}
       onCharacterDetail={handleCharacterDetail}
+      handlePage={handlePage}
+      count={count}
     />
   );
 };

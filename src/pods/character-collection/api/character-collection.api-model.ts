@@ -15,11 +15,11 @@ export interface CharacterData {
   species: string;
   type: string;
   gender: string;
-  origin: CharacterOrigin;
-  location: CharacterLocation;
+  origin?: CharacterOrigin;
+  location?: CharacterLocation;
   image: string;
-  episode: string[];
-  url: string;
+  episode?: string[];
+  url?: string;
 }
 
 export interface CharacterEntityApi {
