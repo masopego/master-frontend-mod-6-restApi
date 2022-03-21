@@ -8,12 +8,20 @@ export const useCharacterCollection = () => {
   const [characterCollection, setCharacterCollection] = React.useState<
     Character[]
   >([]);
+  const [count, setCount] = React.useState<number>(1);
+  const [page, setPage] = React.useState<number>(1);
+
+  const handlePage = (newPage: number) => setPage(newPage);
 
   const loadCharacterCollection = async () => {
-    const { results } = await getCharacterCollection();
+    const { info, results } = await getCharacterCollection(page);
 
+    setCount(info.pages);
     setCharacterCollection(mapToCollection(results, mapFromApiToVm));
   };
+  React.useEffect(() => {
+    loadCharacterCollection();
+  }, [page]);
 
-  return { characterCollection, loadCharacterCollection };
+  return { characterCollection, loadCharacterCollection, count, handlePage };
 };

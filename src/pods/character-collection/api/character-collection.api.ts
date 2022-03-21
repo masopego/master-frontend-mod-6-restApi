@@ -6,10 +6,12 @@ interface GetCharacterCollectionResponse {
   characters: CharacterEntityApi;
 }
 
-export const getCharacterCollection = async (): Promise<CharacterEntityApi> => {
+export const getCharacterCollection = async (
+  page: number
+): Promise<CharacterEntityApi> => {
   const CharacterCollectionQuery = gql`
-    query {
-      characters(page: 1) {
+    query ($page: Int) {
+      characters(page: $page) {
         info {
           count
           pages
@@ -32,7 +34,8 @@ export const getCharacterCollection = async (): Promise<CharacterEntityApi> => {
 
   const { characters } =
     await graphQLClient.request<GetCharacterCollectionResponse>(
-      CharacterCollectionQuery
+      CharacterCollectionQuery,
+      { page }
     );
 
   return characters;
